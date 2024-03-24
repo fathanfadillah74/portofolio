@@ -1,0 +1,28 @@
+@import "../../index.scss";
+
+.experienceContainer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 50px;
+
+  .listEducationContainer {
+    max-width: 100%;
+    padding: 10px;
+    width: 100%;
+
+    .listEducation {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(121, 228, 255);
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      border-radius: 20px;
+    }
+  }
+}

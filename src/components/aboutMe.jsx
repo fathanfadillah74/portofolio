@@ -17,8 +17,17 @@ function AboutMe() {
           </div>
         </div>
         <div className={style.textContainer}>
-          <span>I'm Fathan Fadillah and I'm a software developer. Born in Jakarta on May 23 2002, I graduated from Telkom University in 2020 with a diploma in information systems.</span>
-          <span>Becoming a developer is a challenge in itself for me, where time is spent studying to increase my knowledge and survive in this field. but because of that, I also feel comfortable to be part of this field</span>
+          <span>
+            I'm Fathan Fadillah and I'm a software developer. Born in Jakarta on
+            May 23 2002, I graduated from Telkom University in 2020 with a
+            diploma in information systems.
+          </span>
+          <span>
+            Becoming a developer is a challenge in itself for me, where time is
+            spent studying to increase my knowledge and survive in this field.
+            but because of that, I also feel comfortable to be part of this
+            field
+          </span>
         </div>
       </div>
     </>
