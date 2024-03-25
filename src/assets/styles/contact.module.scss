@@ -1,0 +1,95 @@
+.contactContainer {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 100px 20px;
+    padding: 0px 20px 0px 0px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+    .leftContainer {
+        background-color: #ACE2E1;
+        border-radius: 50px;
+        padding: 30px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .headerContent {
+            max-width: 500px;
+            margin: 20px 0px;
+        }
+
+        .bodyContent {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            .contactContent {
+                display: flex;
+                align-items: center;
+                margin: 20px 0px;
+                gap: 20px;
+                justify-content: flex-start;
+
+                img {
+                    width: 30px;
+                }
+            }
+        }
+    }
+
+    .rightContainer {
+        display: flex;
+        align-items: stretch;
+        flex: 1;
+    }
+
+    .formContainer {
+        border-radius: 50px;
+        padding: 30px;
+        flex: 1;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            height: 100%;
+
+            .formContent {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                width: 100%;
+                
+
+                &.emailPhone {
+                    flex-direction: row;
+                    gap: 10px;
+                    align-items: center;
+                }
+
+                label {
+                    margin-bottom: 5px;
+                }
+
+                input {
+                    border: none;
+                    border-bottom: 2px solid #000000;
+                    padding: 5px 0;
+                    width: 100%;
+                    font-size: 16px;
+
+                    &:focus {
+                        outline: none; 
+                        border-bottom-color: #007bff;
+                    }
+                }
+            }
+        }
+    }
+}

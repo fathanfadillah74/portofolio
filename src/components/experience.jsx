@@ -8,6 +8,11 @@ import {
   Autoplay,
 } from "swiper/modules";
 import "swiper/css";
+import school from "../assets/images/school.webp"
+import asyst from "../assets/images/asyst.webp"
+import telyu from "../assets/images/telyu.gif"
+import binar from "../assets/images/binar.gif"
+import silvertech from "../assets/images/silvertech.jfif"
 
 function Experience() {
   return (
@@ -16,51 +21,50 @@ function Experience() {
         <div className={style.listEducationContainer}>
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-            slidesPerView={1}
+            slidesPerView={2}
             navigation
+            speed={2000}
             autoplay={{ delay: 4000 }}
-            speed={1000}
           >
             <SwiperSlide>
-              <div className={style.listEducation}>
+              <div className={style.cardListEducation}>
+                <img src={school} alt="" />
                 <span>2017-2020</span>
                 <span>Jakarta Pusat</span>
                 <span>Senior High School 4 Jakarta</span>
                 <span>Science major</span>
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={style.listEducation}>
+              <div className={style.cardListEducation}>
+                <img src={telyu} alt="" />
                 <span>2020-2023</span>
                 <span>Bandung Regency, Buah Batu</span>
                 <span>Telkom University</span>
                 <span>D3 Information Systems</span>
               </div>
             </SwiperSlide>
-          </Swiper>
-        </div>
-        <div className={style.listEducationContainer}>
-        <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-            slidesPerView={1}
-            navigation
-            autoplay={{ delay: 4000 }}
-            speed={1000}
-          >
             <SwiperSlide>
-              <div className={style.listEducation}>
-                <span>2017-2020</span>
-                <span>Jakarta Pusat</span>
-                <span>Senior High School 4 Jakarta</span>
-                <span>Science major</span>
+              <div className={style.cardListEducation}>
+                <img src={binar} alt="" />
+                <span>2024-Present</span>
+                <span>Online Learning</span>
+                <span>Binar Academy (Bootcamp)</span>
+                <span>Fullstack Web Developer</span>
+              </div>
+              <div className={style.cardListEducation}>
+                <img src={asyst} alt="" />
+                <span>2022-2023</span>
+                <span>Work From Home</span>
+                <span>PT Aero System Indonesia</span>
+                <span>Software Enginerr Internship</span>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className={style.listEducation}>
-                <span>2020-2023</span>
-                <span>Bandung Regency, Buah Batu</span>
-                <span>Telkom University</span>
-                <span>D3 Information Systems</span>
+              <div className={style.cardListEducation}>
+                <img src={silvertech} alt="" />
+                <span>2023-Present</span>
+                <span>Tanjung Duren, Jakarta Barat</span>
+                <span>PT SilverTech Indonesia</span>
+                <span>Software Enginerr</span>
               </div>
             </SwiperSlide>
           </Swiper>
