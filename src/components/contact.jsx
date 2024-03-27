@@ -7,7 +7,7 @@ import whatsapp from "../assets/images/icons/whatsapp.png"
 function Contact() {
     return (
         <>
-            <div className={style.contactContainer}>
+            <div className={style.contactContainer} id="contact">
                 <div className={style.leftContainer}>
                     <h1>Contact Information</h1>
                     <div className={style.headerContent}>
@@ -49,6 +49,7 @@ function Contact() {
                                 <label htmlFor="">Message</label>
                                 <input type="text" />
                             </div>
+                            <button className={style.buttonSubmit}>Send</button>
                         </form>
                     </div>
                 </div>

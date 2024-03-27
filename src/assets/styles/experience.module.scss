@@ -19,6 +19,7 @@
       width: 300px;
       height: 300px;
       background-color: white;
+      color: black;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -28,11 +29,13 @@
       position: relative;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 0, 0.1);
       margin: 20px;
-      img{
+
+      img {
         margin-bottom: 20px;
         max-width: 150px;
       }
-      &:hover{
+
+      &:hover {
         border-radius: 50px;
       }
     }
@@ -45,6 +48,21 @@
       align-items: center;
       padding: 10px;
       border-radius: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .experienceContainer {
+    padding: 10px;
+    gap: 20px;
+
+    .listEducationContainer {
+      .cardListEducation {
+        width: 250px; 
+        height: 250px;
+        padding: 40px;
+      }
     }
   }
 }

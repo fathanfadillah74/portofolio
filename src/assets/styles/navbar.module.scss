@@ -4,6 +4,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+
   .navbar {
     position: fixed;
     margin-top: 20px;
@@ -24,11 +25,13 @@ nav {
       gap: 10px;
       padding: 10px;
       padding-left: 2rem;
+
       img {
         width: 30px;
         cursor: pointer;
       }
     }
+
     .list {
       display: flex;
       list-style: none;
@@ -37,6 +40,7 @@ nav {
       padding: 10px;
       cursor: pointer;
       padding-right: 2rem;
+
       li {
         position: relative;
         transition: color 0.3s ease;
@@ -59,31 +63,17 @@ nav {
         &:hover:after {
           width: 100%;
         }
+
         a {
           font-weight: 500;
           color: black;
           text-decoration: inherit;
+
           &:hover {
             color: #34a0ff;
           }
         }
       }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .name {
-    padding-left: 1rem;
-  }
-
-  .list {
-    padding-right: 1rem;
-    gap: 15px;
-    flex-direction: column;
-
-    li {
-      padding: 5px 0;
     }
   }
 }

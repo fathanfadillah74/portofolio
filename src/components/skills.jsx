@@ -3,7 +3,7 @@ import style from "../assets/styles/skills.module.scss";
 function Skills() {
   return (
     <>
-      <div className={style.containerSkills}>
+      <div className={style.containerSkills} id="skills">
         <div className={style.cardSkills}>
           <div className={`${style.headerCard} ${style.yellow}`}>
             Using Tools Like

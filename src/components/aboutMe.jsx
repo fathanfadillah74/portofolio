@@ -5,10 +5,10 @@ import photoMe2 from "../assets/images/photoMe2.jpeg";
 function AboutMe() {
   return (
     <>
-      <div className={style.containerAbout}>
+      <div className={style.containerAbout} id="about">
         <div className={style.photoContainer}>
           <div className={style.card}>
-            <img src={photoMe2} alt="" />
+            <img src={photoMe2} alt=""/>
             <span>Pre Graduation</span>
           </div>
           <div className={style.card}>
