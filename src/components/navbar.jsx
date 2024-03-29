@@ -10,12 +10,12 @@ function NavbarComponent() {
     const body = document.body;
     if (isLightTheme) {
       setIsLightTheme(!isLightTheme);
-      body.classList.add('is-active');
+      body.classList.add("is-active");
       body.style.backgroundColor = "#222831";
       body.style.color = "#ffffff";
     } else {
       setIsLightTheme(!isLightTheme);
-      body.classList.remove('is-active');
+      body.classList.remove("is-active");
       body.style.backgroundColor = "#fff9f1";
       body.style.color = "#000000";
     }
@@ -25,8 +25,8 @@ function NavbarComponent() {
     const section = document.getElementById(sectionId);
     if (section) {
       window.scrollTo({
-        top: section.offsetTop,
-        behavior: "smooth"
+        top: section.offsetHeight,
+        behavior: "smooth",
       });
     }
   };
@@ -39,10 +39,26 @@ function NavbarComponent() {
           <p>Fathan Fadillah</p>
         </div>
         <ul className={styles.list}>
-          <li><a href="#about" onClick={() => scrollToSection("about")}>About Me</a></li>
-          <li><a href="#skills" onClick={() => scrollToSection("skills")}>Skills</a></li>
-          <li><a href="#experience" onClick={() => scrollToSection("experience")}>Experience</a></li>
-          <li><a href="#contact" onClick={() => scrollToSection("contact")}>Contact</a></li>
+          <li>
+            <a href="#about" onClick={() => scrollToSection("about")}>
+              About Me
+            </a>
+          </li>
+          <li>
+            <a href="#skills" onClick={() => scrollToSection("skills")}>
+              Skills
+            </a>
+          </li>
+          <li>
+            <a href="#experience" onClick={() => scrollToSection("experience")}>
+              Experience
+            </a>
+          </li>
+          <li>
+            <a href="#contact" onClick={() => scrollToSection("contact")}>
+              Contact
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
