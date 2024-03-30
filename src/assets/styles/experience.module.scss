@@ -2,16 +2,11 @@
 
 .experienceContainer {
   margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   flex-wrap: wrap;
   padding: 20px;
   gap: 50px;
 
   .listEducationContainer {
-    max-width: 70%;
     padding: 10px;
 
     .cardListEducation {
@@ -49,18 +44,34 @@
       border-radius: 20px;
     }
   }
-}
 
-@media screen and (max-width: 768px) {
-  .experienceContainer {
+  @media screen and (max-width: 768px) {
     padding: 10px;
     gap: 20px;
 
     .listEducationContainer {
       .cardListEducation {
-        width: 250px; 
+        width: 250px;
         height: 250px;
-        padding: 40px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 430px) {
+    padding: 5px;
+    gap: 10px;
+
+    .listEducationContainer {
+      max-width: 90%;
+
+      .cardListEducation {
+        width: 250px;
+        height: 300px;
+        border-radius: 50px;
+
+        &:hover {
+          border-radius: 25px;
+        }
       }
     }
   }

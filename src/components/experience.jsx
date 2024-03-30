@@ -21,6 +21,17 @@ function Experience() {
           speed={2000}
           spaceBetween={50}
           autoplay={{ delay: 4000 }}
+          breakpoints={{
+            1000: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            430: {
+              slidesPerView: 1,
+            },
+          }}
         >
           {experienceData.map((exp, index) => (
             <SwiperSlide key={index}>
