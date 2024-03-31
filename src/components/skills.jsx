@@ -5,7 +5,7 @@ import React from "react";
 function Skills() {
   return (
     <>
-      <div className={style.containerSkills} id="skills">
+      <div className={style.containerSkills}>
         {skillsData.map((category, index) => (
           <div className={style.cardSkills} key={index}>
             <div className={`${style.headerCard} ${getStyleColor(index)}`}>

@@ -8,10 +8,18 @@ function App() {
   return (
     <>
       <NavbarComponent />
-      <AboutMe />
-      <Skills />
-      <Experience />
-      <Contact />
+      <section id="about">
+        <AboutMe />
+      </section>
+      <section id="skills">
+        <Skills />
+      </section>
+      <section id="experience">
+        <Experience />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
     </>
   );
 }

@@ -17,7 +17,7 @@ import silvertech from "../assets/images/silvertech.jfif";
 function Experience() {
   return (
     <>
-      <div className={style.experienceContainer} id="experience">
+      <div className={style.experienceContainer}>
         <div className={style.listEducationContainer}>
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}

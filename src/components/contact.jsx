@@ -7,11 +7,11 @@ import whatsapp from "../assets/images/icons/whatsapp.png";
 function Contact() {
   const copyToClipboard = (text) => {
     navigator.clipboard.writeText(text.target.innerHTML);
-    console.log(text);
+    alert("Email copied to clipboard: " + text.target.innerHTML);
   };
   return (
     <>
-      <div className={style.contactContainer} id="contact">
+      <div className={style.contactContainer}>
         <div className={style.leftContainer}>
           <h1>Contact Information</h1>
           <div className={style.headerContent}>
@@ -23,7 +23,7 @@ function Contact() {
           <div className={style.bodyContent}>
             <div className={style.contactContent}>
               <img src={email} alt="" />
-              <span onClick={copyToClipboard}>fathanfadillah74@gmail.com</span>
+              <a onClick={copyToClipboard}>fathanfadillah74@gmail.com</a>
             </div>
             <div className={style.contactContent}>
               <a href="https://wa.me/6281292098729" target="_blank">
