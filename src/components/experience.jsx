@@ -71,6 +71,13 @@ function Experience() {
                 <span>PT SilverTech Indonesia</span>
                 <span>Software Enginerr</span>
               </div>
+              <div className={style.cardListEducation}>
+                <img src={binar} alt="" />
+                <span>2024-Present</span>
+                <span>Online Learning</span>
+                <span>ProductZilla ShortClass (Bootcamp)</span>
+                <span>React.js</span>
+              </div>
             </SwiperSlide>
           </Swiper>
         </div>
