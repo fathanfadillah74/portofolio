@@ -26,30 +26,30 @@ function Contact() {
               <span onClick={copyToClipboard}>fathanfadillah74@gmail.com</span>
             </div>
             <div className={style.contactContent}>
-              <a href="https://wa.me/6281292098729">
+              <a href="https://wa.me/6281292098729" target="_blank">
                 <img src={whatsapp} alt="" />
               </a>
               <span>
-                <a href="https://wa.me/6281292098729">081292098729</a>
+                <a href="https://wa.me/6281292098729" target="_blank">081292098729</a>
               </span>
             </div>
             <div className={style.contactContent}>
-              <a href="https://www.instagram.com/fathanfdllh/">
+              <a href="https://www.instagram.com/fathanfdllh/" target="_blank">
                 <img src={instagram} alt="" />
               </a>
 
               <span>
-                <a href="https://www.instagram.com/fathanfdllh/">
+                <a href="https://www.instagram.com/fathanfdllh/" target="_blank">
                   @fathanfdllh
                 </a>
               </span>
             </div>
             <div className={style.contactContent}>
-              <a href="https://id.linkedin.com/in/fathanfadillah">
+              <a href="https://id.linkedin.com/in/fathanfadillah" target="_blank">
                 <img src={business} alt="" />
               </a>
               <span>
-                <a href="https://id.linkedin.com/in/fathanfadillah">
+                <a href="https://id.linkedin.com/in/fathanfadillah" target="_blank">
                   fathanfdllh
                 </a>
               </span>
