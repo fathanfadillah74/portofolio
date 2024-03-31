@@ -6,7 +6,6 @@ function Skills() {
   return (
     <>
       <div className={style.containerSkills} id="skills">
-        {/* Looping melalui data keterampilan */}
         {skillsData.map((category, index) => (
           <div className={style.cardSkills} key={index}>
             <div className={`${style.headerCard} ${getStyleColor(index)}`}>
@@ -14,7 +13,6 @@ function Skills() {
             </div>
             <div className={style.bodyCard}>
               <ul>
-                {/* Looping melalui keterampilan dalam kategori */}
                 {category.skills.map((skill, index) => (
                   <React.Fragment key={index}>
                     <li>{skill}</li>
